@@ -83,7 +83,7 @@ background:#fff;
             $password = $_POST['stu_password'];
             $_SESSION['username']=$username;
             $_SESSION['password']=$password;
-            if($username=='student' && $password=='pcce'){
+            if($username=='student' && $password=='1234'){
                  echo "<script>window.open('student.php','_self')</script>"; 
                  echo "<script>alert('login sucess')</script>";
             }
@@ -100,7 +100,7 @@ background:#fff;
             $password = $_POST['tea_password'];
             $_SESSION['username']=$username;
             $_SESSION['password']=$password;
-            if($username=='teacher' && $password=='pcce'){
+            if($username=='teacher' && $password=='1234'){
                  echo "<script>window.open('teacher.php','_self')</script>"; 
                  echo "<script>alert('login sucess')</script>";
             }
