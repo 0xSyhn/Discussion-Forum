@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2023 at 06:28 AM
+-- Generation Time: Mar 17, 2024 at 04:14 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -53,14 +53,6 @@ CREATE TABLE `questions` (
   `question` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `questions`
---
-
-INSERT INTO `questions` (`question_id`, `student_name`, `subject_id`, `question`) VALUES
-(1, 'john', 1, 'what is the speed of light'),
-(2, 'siya', 1, 'what happens when magnesium oxide is added to sodium.');
-
 -- --------------------------------------------------------
 
 --
@@ -74,14 +66,6 @@ CREATE TABLE `solution` (
   `teacher_name` varchar(255) NOT NULL,
   `subject_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `solution`
---
-
-INSERT INTO `solution` (`solution_id`, `question_id`, `solution`, `teacher_name`, `subject_id`) VALUES
-(1, 0, 'Speed of light, speed at which light waves propagate through different materials. In particular, the value for the speed of light in a vacuum is now defined as exactly 299,792,458 metres per second.', 'Sasha', 1),
-(2, 0, 'No reaction takes place\r\n', 'Shayne', 2);
 
 --
 -- Indexes for dumped tables
